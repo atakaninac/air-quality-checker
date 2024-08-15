@@ -39,11 +39,10 @@ window.resizable(False, False)
 #Entries
 entry_long = tk.Entry(width=10, font=("Arial", 16))
 entry_long.insert(tk.END, string=("Longitude."))
-entry_long.bind("<FocusIn>", lambda event: entry_long.delete(0, tk.END))
 
 entry_lat = tk.Entry(width=10, font=("Arial", 16))
 entry_lat.insert(tk.END, string=("Latitude."))
-entry_lat.bind("<FocusIn>", lambda event: entry_lat.delete(0, tk.END))
+entry_lat.focus()
 
 entry_long.grid(row=3, column=0)
 entry_lat.grid(row=2, column=0)
