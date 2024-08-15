@@ -32,7 +32,7 @@ def take_input():
 
 #Window
 window = tk.Tk()
-window.title("Air Quailty")
+window.title("Air Quality")
 window.config(padx=80, pady=80)
 window.resizable(False, False)
 
